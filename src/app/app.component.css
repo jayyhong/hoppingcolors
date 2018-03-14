@@ -1,0 +1,94 @@
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+.wrong-input {
+  background-color: red!important;
+}
+
+.score {
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  margin-left: 10px;
+}
+
+.color-input-container {
+  position: relative;
+  margin: auto;
+  right: 0;
+  left: 0;
+  height: 75vh;
+  width: 350px;
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+
+.color-input {
+  width: 33%;
+  height: 50px;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: white;
+  transition: 0.5s;
+}
+
+.key1background{
+  border: 5px solid lightcoral!important;
+  transition: 0.25 ease;
+}
+.key2background{
+  border: 5px solid skyblue!important;
+  transition: 0.25 ease;
+}
+.key3background{
+  border: 5px solid lightseagreen!important;
+  transition: 0.25 ease;
+}
+
+.keyboard-container {
+  position: absolute;
+  margin: auto;
+  top: 70%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20vh;
+  width: 350px;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  border: 2px solid black;
+  transition: 0.25 ease;
+}
+
+.keys {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  transition: 0.25s
+}
+
+.key1 {
+  background-color: lightcoral;
+  width: 100%;
+  height: 100%;
+  transition: 0.1s
+}
+
+.key2 {
+  background-color: skyblue;
+  width: 100%;
+  height: 100%;
+  transition: 0.1s
+}
+.key3 {
+  background-color: lightseagreen;
+  width: 100%;
+  height: 100%;
+  transition: 0.1s
+}

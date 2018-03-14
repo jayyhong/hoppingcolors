@@ -1,0 +1,23 @@
+<div class="container" [ngClass]="{'wrong-input': wrongInput === true}">
+  <div class="score">
+    Score: {{score}}
+    <br> 
+    Time: {{timer}}
+  </div>
+  <div class="color-input-container">
+    <div class="color-input" *ngFor="let input of gameArray" [style.backgroundColor]="input.color" [style.marginLeft]="input.position">
+    </div>
+  </div>
+
+  <div class="keyboard-container" [ngClass]="{'key1background': qpressed === true, 'key2background': wpressed === true, 'key3background': epressed === true}">
+    <div class="keys" style="background-color: lightcoral" [ngClass]="{'key1': qpressed === true, 'key1background': qpressed === true, 'key2background': wpressed === true, 'key3background': epressed === true}">
+
+    </div>
+    <div class="keys" style="background-color: skyblue" [ngClass]="{'key2': wpressed === true, 'key1background': qpressed === true, 'key2background': wpressed === true, 'key3background': epressed === true}">
+
+    </div>
+    <div class="keys" style="background-color: lightseagreen" [ngClass]="{'key3': epressed === true, 'key1background': qpressed === true, 'key2background': wpressed === true, 'key3background': epressed === true}">
+
+    </div>
+  </div>
+</div>
