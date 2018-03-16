@@ -21,19 +21,30 @@
   margin: auto;
   right: 0;
   left: 0;
-  height: 75vh;
+  height: 74vh;
   width: 350px;
   transform: rotate(180deg);
   transition: 0.5s;
 }
 
+.combo-counter {
+  position: absolute;
+  color: white;
+  font-family: Helvetica;
+  font-size: 30px;
+  transform: rotate(180deg);
+}
+
 .color-input {
   width: 33%;
-  height: 50px;
-  margin-top: 20px;
-  border-radius: 5px;
+  height: 70px;
+  margin-top: 2px;
   background-color: white;
   transition: 0.5s;
+}
+
+.color-input:nth-child(1) {
+  border: 2px solid white;
 }
 
 .key1background{
@@ -70,11 +81,28 @@
   border-radius: 5px;
   width: 100%;
   height: 100%;
-  transition: 0.25s
+  transition: 0.25s;
+  color: white;
+  text-shadow: 2px 2px black;
+  font-family: Helvetica;
+  font-size: 50px;
+  text-align: center;
+  line-height: 20vh;
+}
+
+.keys:nth-child(1){
+  color: lightcoral;
+}
+.keys:nth-child(2){
+  color: skyblue;
+}
+.keys:nth-child(3){
+  color: lightseagreen;
 }
 
 .key1 {
   background-color: lightcoral;
+  color: white!important;
   width: 100%;
   height: 100%;
   transition: 0.1s
@@ -82,12 +110,14 @@
 
 .key2 {
   background-color: skyblue;
+  color: white!important;
   width: 100%;
   height: 100%;
   transition: 0.1s
 }
 .key3 {
   background-color: lightseagreen;
+  color: white!important;
   width: 100%;
   height: 100%;
   transition: 0.1s

@@ -18,6 +18,7 @@ export class AppComponent {
   green: any;
   score: number = 0;
   timer: number = 10;
+  combo: number = 0;
 
   constructor() {
     this.fillGameArray = [
@@ -55,6 +56,7 @@ export class AppComponent {
         this.qpressed = true;
         this.wpressed = false;
         this.epressed = false;
+        this.combo++
         setTimeout(() => {
           this.qpressed = false;
         }, 100);
@@ -66,6 +68,7 @@ export class AppComponent {
           );
         } else {
           this.wrongInput = true;
+          this.combo = 0;
           setTimeout(() => {
             this.wrongInput = false;
           }, 100);
@@ -75,6 +78,7 @@ export class AppComponent {
         this.qpressed = false;
         this.wpressed = true;
         this.epressed = false;
+        this.combo++
         setTimeout(() => {
           this.wpressed = false;
         }, 100);
@@ -86,6 +90,7 @@ export class AppComponent {
           );
         } else {
           this.wrongInput = true;
+          this.combo = 0;
           setTimeout(() => {
             this.wrongInput = false;
           }, 100);
@@ -95,6 +100,7 @@ export class AppComponent {
         this.qpressed = false;
         this.wpressed = false;
         this.epressed = true;
+        this.combo++
         setTimeout(() => {
           this.epressed = false;
         }, 100);
@@ -106,6 +112,7 @@ export class AppComponent {
           );
         } else {
           this.wrongInput = true;
+          this.combo = 0;
           setTimeout(() => {
             this.wrongInput = false;
           }, 100);
